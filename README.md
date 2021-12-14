@@ -4,7 +4,11 @@
 
 In the project directory, you can run:
 
+- To install all dependencies
+
 ### `yarn`
+
+- To start the application
 
 ### `yarn start`
 
