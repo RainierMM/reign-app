@@ -43,11 +43,13 @@ const AppLayout: FC<AppLayoutProps> = ({
       <GridContainer data={data} news={news} />
 
       {/* Pagination */}
-      <Pagination
-        page={page}
-        maxPage={maxPage}
-        changePageNumber={changePageNumber}
-      />
+      {news === "All" ? (
+        <Pagination
+          page={page}
+          maxPage={maxPage}
+          changePageNumber={changePageNumber}
+        />
+      ) : null}
     </div>
   );
 };
